@@ -145,7 +145,6 @@ public class Utils {
 
     public static String getServerURL(Context context) {
         String device = SystemProperties.get(Constants.PROP_DEVICE);
-        device = device.split("_")[1];
         String serverUrl = SystemProperties.get(Constants.PROP_UPDATER_URI);
         if (serverUrl.trim().isEmpty()) {
             serverUrl = context.getString(R.string.updater_server_url);
